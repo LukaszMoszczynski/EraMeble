@@ -10,7 +10,11 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="externalCss/owl.carousel.min.css">
 		<link rel="stylesheet" type="text/css" href="externalCss/hamburgers.css">
+		<link rel="stylesheet" href="externalCss/photoswipe.css"> 
+		<link rel="stylesheet" href="externalCss/default-skin.css">
+
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./send-script.php"></script> 
@@ -67,7 +71,7 @@
 					<h2>świetne meble</h2>
 					<h1>na Twój wymiar.</h1>
 					<div class="button-container">
-						<a class="button smooth" href="#contact">KONTAKT</a>
+						<a class="button smooth" href="#contact"><div class='insider'></div>KONTAKT</a>
 					</div>	
 					<div class="marquee">
 						• regały sklepowe • kuchnie • meble dla dzieci • zabudowa wnęk • szafy • garderoby • meble łazienkowe • meble biurowe • biurka • a także meble nietypowe na specjalne zamówienie 
@@ -81,39 +85,48 @@
 			<fieldset class="container">
 				<legend>MAKSYMALNY WYMIAR JAKOŚCI</legend>
 				<div class="row">
+
 					<div class="col-md-4">
 						<img src="https://dummyimage.com/270x150/000/fff">
 						<p>Nazywam się Bogumił Woźniak i&nbsp;prowadzę firmę <span>Era Meble.</span> Zajmujemy się projektowaniem, produkcją oraz&nbsp;montażem mebli najwyższej jakośc</p>
 					</div>
+
 					<div class="col-md-4">
-						<p>Wykonujemy meble kuchenne, biurowe, łazienkowe, sklepowe, dziecięce oraz szafy, garderoby, zabudowy wnęk, pawlaczy, a&nbsp;także rur i&nbsp;liczników. Spełniamy również nietypowe życzenia naszych klientów. <span>Era Meble</span> stawia na funkcjonalność i&nbsp;estetykę połączone z&nbsp;niepowtarzalnością mebli na wymiar. Oferujemy kompleksową obsługę, swój czas i&nbsp;doświadczenie, aby ekskluzywne meble spełniły Twoje oczekiwania, bo zależy nam na Twoim zadowoleniu. </p>
+						<p>Wykonujemy meble kuchenne, biurowe, łazienkowe, sklepowe, dziecięce oraz szafy, garderoby oraz zabudowy wnęk. Spełniamy również nietypowe życzenia naszych klientów. <span>Era Meble</span> stawia na funkcjonalność i&nbsp;estetykę połączone z&nbsp;niepowtarzalnością mebli na wymiar. Oferujemy kompleksową obsługę, swój czas i&nbsp;doświadczenie, aby ekskluzywne meble spełniły Twoje oczekiwania, bo zależy nam na Twoim zadowoleniu. </p>
 					</div>
+
 					<div class="col-md-4">
 						<p>Pracujemy tak, aby sprostać najwyższym wymaganiom i&nbsp;standardom.Każdy projekt traktujemy indywidualnie, bo każda realizacja powstaje w&nbsp;oparciu o&nbsp;inne potrzeby. Zawsze jednak dbamy o&nbsp;solidne i&nbsp;estetyczne wykonanie mebli — centymetr po centymetrze. Musi być fachowo i&nbsp;rzetelnie — w końcu chodzi o&nbsp;indywidualny wymiar zadowolenia. Zachęcamy do współpracy z&nbsp;<span>Era Meble.</span> <br>Zadzwoń: tel. <span><a href="tel:+48-505-549-741">+48 505 549 741</a></span></p>
 					</div>
+
 				</div>
 			</fieldset>	
 		</section>
 
 		<section class="offer" id="offer">
-			<fieldset class="container">
+
+			<fieldset class="container" align="center">
 				<legend>4 WYMIARY NASZEJ PRACY</legend>
 				<div class="row">
+
 					<div class="col-md-3">
 						<div class="icon-container"><img src="images/hearth.png"></div>
 						<h5>PASJA</h5>
 						<p>Lubimy i&nbsp;umiemy robić meble, dlatego tworzymy je zawsze wysokiej jakości.</p>
 					</div>
+
 					<div class="col-md-3">
 						<div class="icon-container"><img src="images/tools.png"></div>
 						<h5>RZETELNOŚĆ</h5>
 						<p>Dbamy o&nbsp;detale na każdym etapie realizacji, pracujemy na najlepszych materiałach.</p>
 					</div>
+
 					<div class="col-md-3">
 						<div class="icon-container"><img src="images/calendar.png"></div>
 						<h5>TERMINOWOŚĆ</h5>
 						<p>Szanujemy Twój czas, więc projekty realizujemy zgodnie z ustalonym harmonogramem.</p>
 					</div>
+
 					<div class="col-md-3">
 						<div class="icon-container"><img src="images/ideas.png"></div>
 						<h5>INDYWIDUALNE PODEJŚCIE</h5>
@@ -121,52 +134,396 @@
 					</div>
 				</div>
 			</fieldset>
+
 		</section>
 
 		<section class="baners">
+
 			<div class="container">
 				<h5>MIERZYMY WYSOKO</h5>
 				<p>Wiemy, że na dobrą jakość mebli na wymiar wpływ mają także użyte materiały. Dlatego do naszych realizacji wybieramy <br>tylko materiały najlepszych producentów komponentów do produkcji mebli.</p>
 			</div>
-			<div class="marque-baners">
-				<img src="images/logos/peka.png">
-				<img src="images/logos/swiss.png">
-				<img src="images/logos/indeco.png">
 
-				<img src="images/logos/blum.png">
-				<img src="images/logos/zobal.png">
-				<img src="images/logos/sevroll.png">
+			<div class="carousel-container">
+				<div id="carousel" class="carousel">
+					<ul class="images">
+						<li><img src="images/logos/peka.png"></li>
+						<li><img src="images/logos/swiss.png"></li>
+						<li><img src="images/logos/indeco.png"></li>
+						<li><img src="images/logos/blum.png"></li>
+						<li><img src="images/logos/zobal.png"></li>
+						<li><img src="images/logos/sevroll.png"></li>
+						<li><img src="images/logos/egger.png"></li>
+						<li><img src="images/logos/gamet.png"></li>
+						<li><img src="images/logos/pfleider.png"></li>
 
-				<img src="images/logos/egger.png">
-				<img src="images/logos/gamet.png">
-				<img src="images/logos/pfleider.png">
+						<li><img src="images/logos/peka.png"></li>
+						<li><img src="images/logos/swiss.png"></li>
+						<li><img src="images/logos/indeco.png"></li>
+						<li><img src="images/logos/blum.png"></li>
+						<li><img src="images/logos/zobal.png"></li>
+						<li><img src="images/logos/sevroll.png"></li>
+						<li><img src="images/logos/egger.png"></li>
+						<li><img src="images/logos/gamet.png"></li>
+						<li><img src="images/logos/pfleider.png"></li>
+					</ul>
+				</div>
+			</div>
 
+		</section>
+
+		<section class="work">
+			<fieldset class="container">
+				<legend>MASZ MARZENIA DO ZMIERZENIA<span>?</span></legend>
+				<h6>Zrealizujemy je w 5 łatwych krokach:</h6>
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="row">				
+							<div class="col-3">
+								<h1>1<span></span></h1>
+							</div>
+							<div class="col-9">
+								<h5>KONTAKT</h5>
+								<p>Dzwonisz lub piszesz <br>do nas i&nbsp;umawiamy się na&nbsp;spotkanie.</p>
+							</div>				
+						</div>
+
+						<div class="row">
+							<div class="col-3">
+								<h1>2<span></span></h1>
+							</div>
+							<div class="col-9">
+								<h5>WYCENA</h5>
+								<p>Spotykamy się, mówisz dokładnie czego oczekujesz, a&nbsp;my wykonujemy projekt <br>i&nbsp;wyceniamy go.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="row">
+							<div class="col-3">
+								<h1>3<span></span></h1>
+							</div>
+							<div class="col-9">
+								<h5>PRODUKCJA</h5>
+								<p>Wykonujemy dokładne <br>pomiary, zamawiamy części i&nbsp;wykonujemy Twoje meble</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-3">
+								<h1>4<span></span></h1>
+							</div>
+							<div class="col-9">
+								<h5>MONTAŻ</h5>
+								<p>W uzgodnionym wcześniej <br>terminie przyjeżdżamy <br>i&nbsp;montujemy cały komplet wyjątkowych mebli.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="row">					
+							<div class="col-3">
+								<h1>5<span></span></h1>
+							</div>
+							<div class="col-9">
+								<h5>RADOŚĆ<br> W KAŻDYM WYMIARZE</h5>
+								<p>Meble są gotowe i&nbsp;cieszysz się ich pięknem oraz jakością każdego dnia.</p>
+							</div>							
+						</div>
+
+						<div class="row">
+							<div class="offset-3 col-9 button-container">
+								<a class="button smooth" href="#contact"><div class='insider'></div>KONTAKT</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</fieldset>
+		</section>
+
+		<section class="gallery" id="gallery">
+
+			<h4>ZREALIZOWANE PROJEKTY</h4>
+			<div class="gallery-container">
+		
+				<figure class="img img-1">
+					<a href="images/gallery/1.png" data-size="1345x916">
+						<img src="images/gallery/1.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-2">
+					<a href="images/gallery/2.png" data-size="1058x1411">
+						<img src="images/gallery/2.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-3">
+					<a href="images/gallery/3.png" data-size="1058x1161">
+						<img src="images/gallery/3.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-4">
+					<a href="images/gallery/4.png" data-size="991x1349">
+						<img src="images/gallery/4.png"alt="gallery image"/>
+					</a>
+				</figure>				
+
+				<figure class="img img-5">
+					<a href="images/gallery/5.png" data-size="918x667">
+						<img src="images/gallery/5.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-6">
+					<a href="images/gallery/6.png" data-size="1000x657">
+						<img src="images/gallery/6.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-7">
+					<a href="images/gallery/7.png" data-size="942x653">
+						<img src="images/gallery/7.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-8">
+					<a href="images/gallery/8.png" data-size="1301x1162">
+						<img src="images/gallery/8.png"alt="gallery image"/>
+					</a>
+				</figure>	
+
+				<figure class="img img-9">
+					<a href="images/gallery/9.png" data-size="1000x667">
+						<img src="images/gallery/9.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-10">
+					<a href="images/gallery/10.png" data-size="904x667">
+						<img src="images/gallery/10.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-11">
+					<a href="images/gallery/11.png" data-size="1019x1411">
+						<img src="images/gallery/11.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-12">
+					<a href="images/gallery/12.png" data-size="870x667">
+						<img src="images/gallery/12.png"alt="gallery image"/>
+					</a>
+				</figure>				
+
+				<figure class="img img-13">
+					<a href="images/gallery/13.png" data-size="528x690">
+						<img src="images/gallery/13.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-14">
+					<a href="images/gallery/14.png" data-size="920x1279">
+						<img src="images/gallery/14.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-15">
+					<a href="images/gallery/15.png" data-size="528x960">
+						<img src="images/gallery/15.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-16">
+					<a href="images/gallery/16.png" data-size="1000x667">
+						<img src="images/gallery/16.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-17">
+					<a href="images/gallery/17.png" data-size="985x1382">
+						<img src="images/gallery/17.png"alt="gallery image"/>
+					</a>
+				</figure>
+
+				<figure class="img img-18">
+					<a href="images/gallery/18.png" data-size="756x1008">
+						<img src="images/gallery/18.png"alt="gallery image"/>
+					</a>
+				</figure>				
+
+			</div>
+
+		</section>
+
+		<section class="testimonials">
+			<fieldset class="container">
+				<legend>NOWY WYMIAR ZADOWOLENIA</legend>
+				<div class="owl-carousel owl-theme">
+
+					<div>
+						<img src="images/quote_right.png" alt="quotation">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+						<img src="images/quote_left.png" alt="quotation">
+					</div>
+
+					<div>
+						<img src="images/quote_right.png" alt="quotation">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+						<img src="images/quote_left.png" alt="quotation">	
+					</div>
+
+				</div>
+			</fieldset>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-5">
+
+						<img src="images/logo.png" alt="Era Meble">
+						<p class="adress">Bogumił Woźniak<br>
+						ul. Klemensa Janickiego 33<br>
+						Szczecin, Polska<br>
+						<span>tel. <a href="tel:+48-505-549-741">+48 505 549 741</a></span><br>
+						<span>email: biuro@erameble.pl</span></p>
+
+						<div class="form-container">
+							<div class="form-message form-hide">
+								<h2>Dziękujemy!</h2>
+								<h4>Wiadomość została wysłana.</h4>
+								<h6>Wyślij kolejną wiadomość</h6>
+								<button class="button"><div class="insider"></div>Kliknij</button>
+							</div>
+
+							<form class="form" id="contactForm" method="post" action="send-script.php">
+								<input type="name" name="name" required data-error="Wypełnij to pole" id="field-name" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+" placeholder="Imię">
+								<input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Adres e-mail">
+								<input type="number" name="phone" required id="field-phone" data-error="Wpisz poprawny numer telefonu" placeholder="Numer telefonu">
+								<textarea class="autoExpand" data-min-rows='3' name="message" required id="field-message" data-error="Musisz wypełnić pole" pattern=".+" placeholder="Wiadomość"></textarea>
+								<button type="submit" class="button"><div class="insider"></div>Wyślij</button>
+							</form>
+						</div>
+
+						<div class="info">
+							<p>Nr konta:<br>35 1030 0019 0109 8518 0483 4654</p>
+							<p>NIP: 2530138701<br>REGON: 321390745</p>
+						</div>				
+					</div>
+
+					<div class="col-md-7">
+						<div id="map"></div>
+					</div>
+
+				</div>
 			</div>
 		</section>
 
-		<section class="map-section">
-			<div id="map"></div>
-		</section>
+		<footer>
+			<div class="container">
+				<p>©2019 EraMeble - all rights reserved<p>
+				<p>credits: icons - www.flaticon.com</p>
+			</div>
+		</footer>
 
-		<footer></footer>
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe. 
+		         It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
+
+		        <!-- Container that holds slides. 
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
+
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+
+		            <div class="pswp__top-bar">
+
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+
+		                <div class="pswp__counter"></div>
+
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+		                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <!-- element will get class pswp__preloader--active when preloader is running -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+		            </div>
+
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div> 
+		            </div>
+
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
+
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
+
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+
 
 		<script>
 	      initMap = function() {
-		  var jk = {lat: 53.4289036, lng: 14.5448369};
+		  var era = {lat: 53.4289036, lng: 14.5448369};
 		  
 		  var map = new google.maps.Map(
-		      document.getElementById('map'), {zoom: 16, center: jk});
+		      document.getElementById('map'), {zoom: 16, center: era});
 		  
-		  var marker = new google.maps.Marker({position: jk, map: map});
+		  var marker = new google.maps.Marker({position: era, map: map});
   		}
 	    </script>
 
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+		<script src="js/photoswipe.min.js"></script> 
+		<script src="js/photoswipe-ui-default.min.js"></script> 
+
 		<script defer type="text/javascript" src="js/scripts.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwiHg1gizC9YjZtre9Er16vFUBPAQ2w2U&callback=initMap" async defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?&callback=initMap" async defer></script>
 
 	</body>
 </html>
