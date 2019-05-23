@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 $main-color: rgb(158, 11, 15);
@@ -14,7 +14,10 @@ body {
 
 
 section {
-	padding: 100px 0;
+	padding: 90px 0;
+	@media only screen and (max-width: 767px) {
+		padding: 70px 0;
+	}
 }
 
 
@@ -54,6 +57,7 @@ fieldset {
 		border: 1px solid $forth-color;
 		text-decoration: none;
 		color: $forth-color;
+		cursor: pointer;
 	}
 	&:hover .insider {
 		transition: all 0.5s ease;
@@ -129,14 +133,14 @@ fieldset {
 			animation: image-animation 18s linear infinite;
 		}
 		.first-slide {
-			background-image: url(../images/BG_1.png);
+			background-image: url(../images/BG_1.jpg);
 		}
 		.second-slide {
-			background-image: url(../images/BG_2.png);
+			background-image: url(../images/BG_2.jpg);
 			animation-delay: 6s;
 		}
 		.third-slide {
-			background-image: url(../images/BG_3.png);
+			background-image: url(../images/BG_3.jpg);
 			animation-delay: 12s;
 		}
 	}
@@ -145,6 +149,16 @@ fieldset {
 		z-index: 5;
 		background: rgba(255, 255, 255, 0.7);	
 		transition: .5s;
+		.navbar-toggler {
+			outline: none;
+		}
+		.navbar-brand {
+			img {
+				@media only screen and (max-width: 767px) {
+					height: 42px;
+				}
+			}		
+		}
 		&:hover {
 			background: rgba(255, 255, 255, 1);	
 		}
@@ -182,14 +196,43 @@ fieldset {
 		display: flex;
 		align-items: center;
 		color: $second-color;
+		@media only screen and (max-width: 991px) {
+			justify-content: center;		
+		}
+		.row {
+			@media only screen and (max-width: 991px) {
+				justify-content: center;	
+			}
+		}
 		h1 {
 			font-size: 96px;
 			letter-spacing: 15px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 70px;				
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 50px;	
+				padding: 0.5rem;	
+			}
+			@media only screen and (max-width: 570px) {	
+				letter-spacing: 5px;	
+				font-size: 40px;
+			}
 		}
 		h1:nth-of-type(2) {
 			color: $main-color;
 			font-size: 90px;
 			margin-right: 30px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 70px;				
+			}
+			@media only screen and (max-width: 767px) {
+				margin-right: 0;	
+				font-size: 50px;		
+			}
+			@media only screen and (max-width: 570px) {		
+				font-size: 40px;
+			}
 		}
 		h2 {
 			font-size: 60px;
@@ -197,15 +240,33 @@ fieldset {
 			display: flex;
 			align-items: flex-end;
 			margin-left: 50px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 50px;	
+				margin-left: 0;			
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 30px;	
+				padding: 0 0.5rem;	
+			}
+			@media only screen and (max-width: 570px) {	
+				letter-spacing: 5px;	
+				font-size: 20px;
+			}
 		}
 		.button-container {
 			display: flex;
 			align-items: center;
+			padding: 0 0.5rem;
 		}
 		.marquee {
+			margin-top: 10px;
+			font-size: 20px;
 			letter-spacing: 3px;
 			overflow: hidden;
 			width: 750px;
+			@media only screen and (max-width: 767px) {
+				width: 100vw;		
+			}
 		}
 	}
 }
@@ -219,7 +280,7 @@ fieldset {
 	.row {
 		padding: 100px 10px;
 		.col-md-4 {
-			padding: 0 30px;
+			padding: 0 50px;
 			text-align: left;
 			img {
 				margin-bottom: 20px;
@@ -257,9 +318,15 @@ fieldset {
 			border-radius: 50%;
 			background-color: $main-color;
 			margin: 40px 0;
+			@media only screen and (max-width: 767px) {
+				margin: 20px 0;		
+			}
 		}
 		p {
 			margin: 40px 0;
+			@media only screen and (max-width: 767px) {
+				margin: 20px 0;				
+			}
 		}	
 	}
 	.col-md-3:nth-of-type(4) {
@@ -271,7 +338,7 @@ fieldset {
 
 .baners {
 	text-align: center;
-	padding: 50px 0;
+	padding: 20px 0;
 	h5 {
  		font-size: 22px;
  		font-weight: 500;
@@ -305,11 +372,17 @@ fieldset {
 }
 
 .work {
+	@media only screen and (max-width: 767px) {
+		padding-bottom: 20px;		
+	}
 	span {
 		color: $main-color;
 	}
 	.container {
 		padding-bottom: 70px;
+		@media only screen and (max-width: 767px) {
+			padding-bottom: 0;		
+		}
 		h6 {
 			padding: 20px 0 50px;
 		}
@@ -465,17 +538,30 @@ fieldset {
 			img {
 				height: 40px;
 				width: 40px;
+				
 			}
 			img:nth-of-type(1) {
 				float: right;
 			}
 			p {
-				padding: 50px 150px;
+				padding: 50px 150px 0;
 				@media only screen and (max-width: 1199px) {
-					padding: 50px;
+					padding: 50px 50px 0;
 				}
 				@media only screen and (max-width: 767px) {
-					padding: 50px 25px 25px;
+					padding: 50px 25px 0;
+				}
+			}
+			h6 {
+				display: flex;
+				justify-content: flex-end;
+				padding: 0 150px 20px 0;
+				margin: 0;
+				@media only screen and (max-width: 1199px) {
+					padding: 0 50px 20px 0;
+				}
+				@media only screen and (max-width: 767px) {
+					padding: 0 25px 20px 0;
 				}
 			}
 		}
@@ -499,8 +585,9 @@ input[type=number] {
 .contact {
 	background-color: $third-color;
 	.col-md-5 {
+
 		.adress {
-			padding: 40px 0; 
+			padding: 40px 0 0; 
 			a {
 				color: $second-color;
 				text-decoration: none;
@@ -513,16 +600,31 @@ input[type=number] {
 			button {
 				border: none;
 			}
+			.form-message {
+				h4 {
+					margin: 20px 0;
+				}
+				h6 {
+					margin-bottom: 20px;
+				}
+			}
 			form {
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
+				padding: 40px 0; 
 				input {
 					width: 70%;
 					border: none;
 					border-bottom: solid 2px $second-color;
 					background-color: inherit;
 					margin: 10px 0;
+					&:focus {
+						outline: none;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+					}
 				}
 				textarea {
 					width: 70%;
@@ -531,6 +633,13 @@ input[type=number] {
 					resize: none;
 					background-color: inherit;
 					margin: 10px 0 20px;
+					box-shadow: none;
+					&:focus {
+						outline: none;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+					}
 				} 
 			}		
 		}
@@ -539,6 +648,9 @@ input[type=number] {
 		}
 	}
 	.col-md-7 {
+		@media only screen and (max-width: 767px) {
+			padding-top: 20px;
+		}
 		#map {
 			min-height: 400px;
 			height: 100%;
@@ -554,5 +666,13 @@ footer {
 	div {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		a {
+			color: inherit;
+			&:hover {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
 	}	
 }

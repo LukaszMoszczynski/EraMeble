@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 body {
   font-family: 'Roboto', sans-serif;
@@ -6,7 +6,13 @@ body {
 }
 
 section {
-  padding: 100px 0;
+  padding: 90px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  section {
+    padding: 70px 0;
+  }
 }
 
 fieldset {
@@ -49,6 +55,7 @@ fieldset legend {
   border: 1px solid white;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .button:hover .insider {
@@ -126,16 +133,16 @@ fieldset legend {
 }
 
 .hero .slideshow .first-slide {
-  background-image: url(../images/BG_1.png);
+  background-image: url(../images/BG_1.jpg);
 }
 
 .hero .slideshow .second-slide {
-  background-image: url(../images/BG_2.png);
+  background-image: url(../images/BG_2.jpg);
   animation-delay: 6s;
 }
 
 .hero .slideshow .third-slide {
-  background-image: url(../images/BG_3.png);
+  background-image: url(../images/BG_3.jpg);
   animation-delay: 12s;
 }
 
@@ -143,6 +150,16 @@ fieldset legend {
   z-index: 5;
   background: rgba(255, 255, 255, 0.7);
   transition: .5s;
+}
+
+.hero .navbar .navbar-toggler {
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .navbar .navbar-brand img {
+    height: 42px;
+  }
 }
 
 .hero .navbar:hover {
@@ -194,15 +211,68 @@ fieldset legend {
   color: #5b5b5e;
 }
 
+@media only screen and (max-width: 991px) {
+  .hero .header-text {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero .header-text .row {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 .hero .header-text h1 {
   font-size: 96px;
   letter-spacing: 15px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero .header-text h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .header-text h1 {
+    font-size: 50px;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .hero .header-text h1 {
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
 }
 
 .hero .header-text h1:nth-of-type(2) {
   color: #9e0b0f;
   font-size: 90px;
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero .header-text h1:nth-of-type(2) {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .header-text h1:nth-of-type(2) {
+    margin-right: 0;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .hero .header-text h1:nth-of-type(2) {
+    font-size: 40px;
+  }
 }
 
 .hero .header-text h2 {
@@ -215,17 +285,47 @@ fieldset legend {
   margin-left: 50px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .hero .header-text h2 {
+    font-size: 50px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .header-text h2 {
+    font-size: 30px;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .hero .header-text h2 {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+}
+
 .hero .header-text .button-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  padding: 0 0.5rem;
 }
 
 .hero .header-text .marquee {
+  margin-top: 10px;
+  font-size: 20px;
   letter-spacing: 3px;
   overflow: hidden;
   width: 750px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .header-text .marquee {
+    width: 100vw;
+  }
 }
 
 .about {
@@ -242,7 +342,7 @@ fieldset legend {
 }
 
 .about .row .col-md-4 {
-  padding: 0 30px;
+  padding: 0 50px;
   text-align: left;
 }
 
@@ -293,8 +393,20 @@ fieldset legend {
   margin: 40px 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .offer .col-md-3 .icon-container {
+    margin: 20px 0;
+  }
+}
+
 .offer .col-md-3 p {
   margin: 40px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .offer .col-md-3 p {
+    margin: 20px 0;
+  }
 }
 
 .offer .col-md-3:nth-of-type(4) p {
@@ -303,7 +415,7 @@ fieldset legend {
 
 .baners {
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .baners h5 {
@@ -348,12 +460,24 @@ fieldset legend {
   width: 150px;
 }
 
+@media only screen and (max-width: 767px) {
+  .work {
+    padding-bottom: 20px;
+  }
+}
+
 .work span {
   color: #9e0b0f;
 }
 
 .work .container {
   padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .work .container {
+    padding-bottom: 0;
+  }
 }
 
 .work .container h6 {
@@ -552,18 +676,39 @@ fieldset legend {
 }
 
 .testimonials .owl-carousel .owl-item p {
-  padding: 50px 150px;
+  padding: 50px 150px 0;
 }
 
 @media only screen and (max-width: 1199px) {
   .testimonials .owl-carousel .owl-item p {
-    padding: 50px;
+    padding: 50px 50px 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .testimonials .owl-carousel .owl-item p {
-    padding: 50px 25px 25px;
+    padding: 50px 25px 0;
+  }
+}
+
+.testimonials .owl-carousel .owl-item h6 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding: 0 150px 20px 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .testimonials .owl-carousel .owl-item h6 {
+    padding: 0 50px 20px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonials .owl-carousel .owl-item h6 {
+    padding: 0 25px 20px 0;
   }
 }
 
@@ -586,7 +731,7 @@ input[type=number] {
 }
 
 .contact .col-md-5 .adress {
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 
 .contact .col-md-5 .adress a {
@@ -602,6 +747,14 @@ input[type=number] {
   border: none;
 }
 
+.contact .col-md-5 .form-container .form-message h4 {
+  margin: 20px 0;
+}
+
+.contact .col-md-5 .form-container .form-message h6 {
+  margin-bottom: 20px;
+}
+
 .contact .col-md-5 .form-container form {
   display: -ms-flexbox;
   display: flex;
@@ -609,6 +762,7 @@ input[type=number] {
       justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  padding: 40px 0;
 }
 
 .contact .col-md-5 .form-container form input {
@@ -619,6 +773,16 @@ input[type=number] {
   margin: 10px 0;
 }
 
+.contact .col-md-5 .form-container form input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact .col-md-5 .form-container form input {
+    width: 100%;
+  }
+}
+
 .contact .col-md-5 .form-container form textarea {
   width: 70%;
   border: none;
@@ -626,10 +790,27 @@ input[type=number] {
   resize: none;
   background-color: inherit;
   margin: 10px 0 20px;
+  box-shadow: none;
+}
+
+.contact .col-md-5 .form-container form textarea:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact .col-md-5 .form-container form textarea {
+    width: 100%;
+  }
 }
 
 .contact .col-md-5 .info {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact .col-md-7 {
+    padding-top: 20px;
+  }
 }
 
 .contact .col-md-7 #map {
@@ -647,5 +828,16 @@ footer div {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer div a {
+  color: inherit;
+}
+
+footer div a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
