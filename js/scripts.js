@@ -33,7 +33,7 @@ $(document).ready(function(){
 	});
 
 //baner slider
-	const speed = 5000;
+	const speed = 3000;
 	(function currencySlide(){
 	    var currencyPairWidth = $('.images li:first-child').outerWidth();
 	    $(".images").animate({marginLeft:-currencyPairWidth},speed, 'linear', function(){
@@ -72,9 +72,34 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 
+
+        const aboutItems = $('.about .row .col-md-4');
+        const offerItems = $('.offer .row .col-md-3');
+        const workItems = $('.work .row .col-md-4 .row');
+
+        function fadeAnimation(items) {
+
+            if(window.pageYOffset > items.offset().top - $(window).height()) {
+
+                let index = 0;
+                const delay = setInterval( function(){
+                  if ( index <= items.length ){
+                    $(items[index]).addClass('fade-In');
+                    index ++;
+                  }else{
+                    clearInterval(delay);
+                  }
+                }, 500 );
+            }
+        }
+
+        fadeAnimation(aboutItems);
+        fadeAnimation(offerItems);
+        fadeAnimation(workItems);
+  
 	})
 
-
+//form
     function animateForm(firstClass, secondClass) {
         firstClass.removeClass('formFadeInAnimation');
         firstClass.addClass('formFadeOutAnimation');
@@ -133,6 +158,27 @@ $(document).ready(function(){
         animateForm(formDiv, $('#form'));
     });
 
+
+    function init() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (var i = 0; i < imgDefer.length; i++) {
+        if (imgDefer[i].getAttribute('data-src')) {
+          imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+
+    window.onload = init;
 })
 
 
+// function init() {
+//   var imgDefer = document.getElementsByTagName('img');
+//   for (var i = 0; i < imgDefer.length; i++) {
+//     if (imgDefer[i].getAttribute('data-src')) {
+//       imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+//     }
+//   }
+// }
+
+// window.onload = init;

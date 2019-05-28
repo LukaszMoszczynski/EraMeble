@@ -108,6 +108,33 @@ fieldset {
 	}
 }
 
+
+@keyframes zoomInOut {
+	0% {
+		transform: scale(1);
+	}
+	50% {	
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1,);
+	}
+}
+
+.fade-In {
+	opacity: 1 !important;
+	animation: fadeInOpacity 1s linear;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 //header
 .hero {
 	height: 100vh;
@@ -282,6 +309,7 @@ fieldset {
 		.col-md-4 {
 			padding: 0 50px;
 			text-align: left;
+			opacity: 0;
 			img {
 				margin-bottom: 20px;
 			}
@@ -309,6 +337,7 @@ fieldset {
 		justify-content: flex-start;
 		flex-direction: column;
 		padding: 0 30px;
+		opacity: 0;
 		.icon-container {
 			display: flex;
 			align-items: center;
@@ -320,6 +349,9 @@ fieldset {
 			margin: 40px 0;
 			@media only screen and (max-width: 767px) {
 				margin: 20px 0;		
+			}
+			img {
+				animation: zoomInOut 2s linear infinite;
 			}
 		}
 		p {
@@ -389,6 +421,7 @@ fieldset {
 		.col-md-4 {
 			.row {
 				min-height: 150px;
+				opacity: 0;
 				.col-3 {
 					padding-right: 0;
 					h1 {

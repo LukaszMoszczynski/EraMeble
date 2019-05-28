@@ -104,6 +104,32 @@ fieldset legend {
   }
 }
 
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fade-In {
+  opacity: 1 !important;
+  animation: fadeInOpacity 1s linear;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero {
   height: 100vh;
   position: relative;
@@ -344,6 +370,7 @@ fieldset legend {
 .about .row .col-md-4 {
   padding: 0 50px;
   text-align: left;
+  opacity: 0;
 }
 
 .about .row .col-md-4 img {
@@ -377,6 +404,7 @@ fieldset legend {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 0 30px;
+  opacity: 0;
 }
 
 .offer .col-md-3 .icon-container {
@@ -397,6 +425,10 @@ fieldset legend {
   .offer .col-md-3 .icon-container {
     margin: 20px 0;
   }
+}
+
+.offer .col-md-3 .icon-container img {
+  animation: zoomInOut 2s linear infinite;
 }
 
 .offer .col-md-3 p {
@@ -486,6 +518,7 @@ fieldset legend {
 
 .work .container .col-md-4 .row {
   min-height: 150px;
+  opacity: 0;
 }
 
 .work .container .col-md-4 .row .col-3 {
